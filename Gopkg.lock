@@ -2,44 +2,77 @@
 
 
 [[projects]]
+  digest = "1:e692d16fdfbddb94e9e4886aaf6c08bdbae5cb4ac80651445de9181b371c6e46"
   name = "github.com/go-sql-driver/mysql"
   packages = ["."]
+  pruneopts = ""
   revision = "72cd26f257d44c1114970e19afddcd812016007e"
   version = "v1.4.1"
 
 [[projects]]
+  digest = "1:c5173ce635a775845b82ce66a46987968cd83ec133faf8de57095be2b56ec869"
   name = "github.com/go-xorm/builder"
   packages = ["."]
+  pruneopts = ""
   revision = "03eb88feccce3e477c318ce7f6f1b386544ab20b"
   version = "v0.3.3"
 
 [[projects]]
+  digest = "1:762cf3f918a3b741c2c645ec1ea4faa34726e1a93054f045444afd7c0ab5edea"
   name = "github.com/go-xorm/core"
   packages = ["."]
+  pruneopts = ""
   revision = "c10e21e7e1cec20e09398f2dfae385e58c8df555"
   version = "v0.6.0"
 
 [[projects]]
+  digest = "1:15e1c1e299b75f7a6178ed450e10d6f7cb87c26eaafd3c4c1f38ae3922cb5e42"
   name = "github.com/go-xorm/xorm"
   packages = ["."]
+  pruneopts = ""
   revision = "1f39c590c64924f358c0d89016ac9b2bb84e9125"
   version = "v0.7.1"
 
 [[projects]]
+  digest = "1:dbbeb8ddb0be949954c8157ee8439c2adfd8dc1c9510eb44a6e58cb68c3dce28"
+  name = "github.com/gorilla/context"
+  packages = ["."]
+  pruneopts = ""
+  revision = "08b5f424b9271eedf6f9f0ce86cb9396ed337a42"
+  version = "v1.1.1"
+
+[[projects]]
+  digest = "1:c2c8666b4836c81a1d247bdf21c6a6fc1ab586538ab56f74437c2e0df5c375e1"
+  name = "github.com/gorilla/mux"
+  packages = ["."]
+  pruneopts = ""
+  revision = "e3702bed27f0d39777b0b37b664b6280e8ef8fbf"
+  version = "v1.6.2"
+
+[[projects]]
+  digest = "1:7df5a9695a743c3e1626b28bb8741602c8c15527e1efaeaec48ab2ff9a23f74c"
   name = "github.com/joho/godotenv"
   packages = ["."]
+  pruneopts = ""
   revision = "23d116af351c84513e1946b527c88823e476be13"
   version = "v1.3.0"
 
 [[projects]]
+  digest = "1:77d3cff3a451d50be4b52db9c7766c0d8570ba47593f0c9dc72173adb208e788"
   name = "google.golang.org/appengine"
   packages = ["cloudsql"]
+  pruneopts = ""
   revision = "4a4468ece617fc8205e99368fa2200e9d1fad421"
   version = "v1.3.0"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "93eb996287fc469efef1709c7b752847b0e8a1dbf21ff1d83cdbbd9c8809f2ec"
+  input-imports = [
+    "github.com/go-sql-driver/mysql",
+    "github.com/go-xorm/xorm",
+    "github.com/gorilla/mux",
+    "github.com/joho/godotenv"
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1

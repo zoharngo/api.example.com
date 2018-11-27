@@ -5,6 +5,8 @@ import (
 	"net/http"
 
 	"github.com/go-xorm/xorm"
+
+	"api.example.com/src/router"
 )
 
 // Server struct
@@ -28,5 +30,7 @@ func (s *Server) Init(port string, db *xorm.Engine) {
 // Start the server
 func (s *Server) Start() {
 	log.Println("Starting server on port", s.port)
-	http.ListenAndServe(s.port, nil)
+	r := router.NewRouter()
+	r.Init()
+	http.ListenAndServe(s.port, r.Router)
 }

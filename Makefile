@@ -1,7 +1,8 @@
-GCC=go
-GCMD=run
-GPATH=main.go
-GPORT=3000
+
+GPORT ?=3000
 
 run:
-	$(GCC) $(GCMD) $(GPATH) -port=${GPORT}
+	go run main.go -port=${GPORT}
+build:
+	go run pkg/main.go -json=./pkg/db/config.json
+	mv db_structs.go pkg/db/

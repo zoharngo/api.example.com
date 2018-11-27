@@ -13,7 +13,7 @@
 
 ### DB Setup
 
-- $ sudo apt update && sudo apt mysql-server -y
+- $ sudo apt update && sudo apt install mysql-server -y
 - $ sudo mysql_secure_installation
 - $ sudo mysql
 
