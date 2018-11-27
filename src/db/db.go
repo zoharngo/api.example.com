@@ -9,7 +9,7 @@ import (
 
 // Connect public method
 func Connect() (db *xorm.Engine, err error) {
-	db, err = xorm.NewEngine("mysql", "root:123@tcp(localhost:3306)/test?charset=utf8")
+	db, err = xorm.NewEngine("mysql", "test:123@tcp(localhost:3306)/test?charset=utf8")
 	if err != nil {
 		return nil, err
 	}
