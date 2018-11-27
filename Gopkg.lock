@@ -26,6 +26,18 @@
   version = "v0.7.1"
 
 [[projects]]
+  name = "github.com/gorilla/context"
+  packages = ["."]
+  revision = "08b5f424b9271eedf6f9f0ce86cb9396ed337a42"
+  version = "v1.1.1"
+
+[[projects]]
+  name = "github.com/gorilla/mux"
+  packages = ["."]
+  revision = "e3702bed27f0d39777b0b37b664b6280e8ef8fbf"
+  version = "v1.6.2"
+
+[[projects]]
   name = "github.com/joho/godotenv"
   packages = ["."]
   revision = "23d116af351c84513e1946b527c88823e476be13"
@@ -40,6 +52,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "93eb996287fc469efef1709c7b752847b0e8a1dbf21ff1d83cdbbd9c8809f2ec"
+  inputs-digest = "3810b732d6687620d243f746f1b971332a7ee654bc4a82d15f0f0168f6c3650c"
   solver-name = "gps-cdcl"
   solver-version = 1

@@ -1,7 +1,7 @@
 package db
 
 import (
-	"log"
+
 	// mysqldriver
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/go-xorm/xorm"
@@ -13,6 +13,5 @@ func Connect() (db *xorm.Engine, err error) {
 	if err != nil {
 		return nil, err
 	}
-	log.Println(db.DBMetas())
-	return db, err
+	return db, nil
 }

@@ -10,10 +10,11 @@
 - $ dep ensure --add github.com/joho/godotenv
 - $ dep ensure --add github.com/go-xorm/xorm
 - $ dep ensure --add _ "github.com/go-sql-driver/mysql"
+- $ dep ensure --add github.com/gorilla/mux
 
 ### DB Setup
 
-- $ sudo apt update && sudo apt mysql-server -y
+- $ sudo apt update && sudo apt install mysql-server -y
 - $ sudo mysql_secure_installation
 - $ sudo mysql
 
@@ -31,7 +32,19 @@
 
 ### DB migration
 
-- db-migrate create add-users
+- $ sudo npm install -g db-migrate db-migrate-mysql
+
+- $ db-migrate create add-users
+- $ db-migrate up
+- $ db-migrate down
+
+#### [test] scope
+- $ db-migrate up:test 
+- $ db-migrate down:test
+
+
+- mysql> show tables;
+- mysql> explain users;
 
 
 
